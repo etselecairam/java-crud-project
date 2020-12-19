@@ -2,6 +2,7 @@ package com.airam.springboot.app.models;
 
 import java.io.Serializable;
 
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.FieldType;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
@@ -12,6 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Document(collection = "products")
 
 public class product implements Serializable {
 
