@@ -1,6 +1,4 @@
-# java-crud-project
-
-Aplicación CRUD
+# Aplicación CRUD - Spring Boot
 
 - Inyección de dependencias
 - Anotaciones
@@ -8,7 +6,7 @@ Aplicación CRUD
 - RESTful
 - Formularios
 - Sesiones HTTP
-- DAta JPA
+- Data JPA
 - MongoDB
 - Maven
 - Java
