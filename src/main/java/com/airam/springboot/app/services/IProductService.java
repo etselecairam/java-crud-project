@@ -4,5 +4,5 @@ import com.airam.springboot.app.models.Product;
 
 public interface IProductService {
 
-	public abstract Product IdProduct(Integer idProduct);
+	public abstract Product IdProduct(String idProduct);
 }

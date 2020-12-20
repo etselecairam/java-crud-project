@@ -1,5 +1,6 @@
 package com.airam.springboot.app.services.impl;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import com.airam.springboot.app.models.Product;
@@ -14,13 +15,13 @@ public class ProductServiceImpl implements IProductService {
 	private ProductRepository productRepository;
 
 	@Override
-	public Product IdProduct(Integer idProduct) {
+	public Product IdProduct(String idProduct) {
 		
 		Product product = null;
 		
 		//para manejar errores
 		try {
-			product = productRepository.findById(idProduct).get();
+			product = productRepository.findById(idProduct);
 			
 		} catch (Exception e) {
 			
