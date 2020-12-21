@@ -7,8 +7,13 @@ import org.springframework.stereotype.Repository;
 
 import com.airam.springboot.app.models.Product;
 
-@Repository("ProductRepository")
-public interface ProductRepository extends MongoRepository <Product, Serializable> {
+@Repository("productRepository")
+public interface ProductRepository extends MongoRepository<Product, Serializable> {
 
 	Product findById(String id);
+	
+	Product deleteById(String id);
 }
+
+
+//acá se busca y elimina en mongodb
