@@ -10,10 +10,11 @@ import com.airam.springboot.app.models.Product;
 import com.airam.springboot.app.repository.ProductRepository;
 import com.airam.springboot.app.services.IProductService;
 
+
 @Service("productService")
 
 public class ProductServiceImpl implements IProductService {
-	
+	//traemos el repository para usar sus funciones	
 	@Autowired
 	private ProductRepository productRepository;
 
@@ -38,7 +39,7 @@ public class ProductServiceImpl implements IProductService {
 	public Product save(Product entity) {
 		//nuevo objeto producto
 		Product product = null;
-		
+		//por si hay errores, que no falle todo
 		try {
 			
 			product = productRepository.save(entity);

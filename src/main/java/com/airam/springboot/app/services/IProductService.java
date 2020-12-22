@@ -16,3 +16,6 @@ public interface IProductService {
 	
 	public abstract Product deleteById(String idProduct);
 }
+
+//esto no interactua con la base de datos
+//se reutiliza en implemetation y en controller

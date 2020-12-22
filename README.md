@@ -1,4 +1,4 @@
-# Aplicación CRUD - Spring Boot
+# Proyecto práctica Codo a codo - Aplicación CRUD - Spring Boot 
 
 - Inyección de dependencias
 - Anotaciones
