@@ -13,8 +13,9 @@ public interface ProductRepository extends MongoRepository<Product, Serializable
 	Product findById(String id);
 	
 	Product deleteById(String id);
+	
 	//probar esto a ver
-	Product findByName(String name);
+	//Product findByName(String name);
 }
 
 
